@@ -22,3 +22,26 @@
     display: block;
 }
 
+/* Open modal  */
+.modal {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin-top: 10px;
+    margin: auto;
+    padding: 5px;
+    justify-content: center;
+    border: 1px solid #888;
+    width: 98%;
+    height: 98%;
+    z-index: 99999;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    color: #aaa;
+}
+
