@@ -14,3 +14,11 @@
 
 
 /* View lichcongtac */
+.dropdown-list{
+    display: none;
+}
+
+.hover-pen:hover .dropdown-list{
+    display: block;
+}
+
