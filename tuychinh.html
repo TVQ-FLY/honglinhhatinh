@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link css  -->
+    <link rel="stylesheet" href="honglinh.css">
+    <!-- Link Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Title  -->
+    <title>Honglinh.hatinh.gov.vn</title>
+</head>
+<body>
+    <div class="noiDung-full p-3 h-[100vh]">
+        <div class="noiDung-text">
+            <p class="text-3xl font-normal">Tùy chỉnh <span class="text-sm text-gray-500">điều chỉnh tham số</span></p>
+        </div>
+        <div class="noiDung-column grid grid-cols-12 gap-4 mt-3">
+            <div class="col-span-12 bg-white p-3">
+                <div class="colum-save flex items-center justify-between">
+                    <div class="save-text flex items-center">
+                        <i class="bi bi-chat-left-text text-xl"></i>
+                        <p class="font-bold text-xl mx-2 my-3">TÙY CHỈNH</p>
+                        <p class="text-gray-500">click 'Lưu lại' để lưu thay đổi --></p>
+                    </div>
+                    <button class="button-save flex items-center bg-[#45b6af] px-2 py-1 rounded-2xl text-white">
+                        <i class="bi bi-floppy"></i>
+                        <p class="px-1">Lưu lại</p>
+                    </button>
+                </div>
+                <hr>
+                <div class="colum-check mt-3">
+                    <div class="check-title grid grid-cols-12">
+                        <p class="text-right col-span-2">Tiêu đề</p>
+                        <input type="text" class="border-[1px] border-cyan-400 col-span-2 ml-3 pl-2">
+                    </div>
+                    <div class="check-check grid grid-cols-12">
+                        <div class="check-null col-span-2"></div>
+                        <div class="check-button col-span-2">
+                            <input type="checkbox" id="check">
+                            <span><label for="check">Hiện nút 'Lên đầu trang' trên menu nhỏ</label></span>
+                        </div>
+                    </div>
+                    <div class="check-link flex items-center grid grid-cols-12 mt-3">
+                        <p class="col-span-2 text-right">Mở liên kết web trong</p>
+                        <div class="flex-col items-center col-span-2">
+                            <div class="tab-new flex">
+                                <input type="radio" name="fav_language" id="tabNew">
+                                <label for="tabNew">Tab mới</label>
+                            </div>
+                            <div class="tab-present flex">
+                                <input type="radio" name="fav_language" id="tabPresent">
+                                <label for="tabPresent">Tab hiện tại</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="noiDung-text bg-white pb-5">
+            <p class="text-2xl font-normal pl-3">Trang chủ</p>
+            <hr>
+            <div class="colum-check mt-3">
+                <div class="check-title grid grid-cols-12">
+                    <p class="text-right col-span-2">Chữ chạy dưới menu</p>
+                    <input type="text" class="border-[1px] border-cyan-400 col-span-2 ml-3 pl-2">
+                </div>
+                <div class="check-title grid grid-cols-12 my-2">
+                    <p class="text-right col-span-2">Số tin nổi bật trên trang chủ</p>
+                    <div class="col-span-2 ml-3 flex">
+                        <button class="counter-btn decrement bg-red-500 px-3 py-1 text-white">-</button>
+                        <input type="text" id="counter-value" class="w-[50px] border-[1px] border-cyan-400 pl-1">
+                        <button class="counter-btn increment bg-blue-500 px-3 py-1 text-white">+</button>
+                    </div>
+                </div>
+                <div class="check-title grid grid-cols-12 my-2">
+                    <p class="text-right col-span-2">Số tin thuộc kênh tin trên trang chủ</p>
+                    <div class="col-span-2 ml-3 flex">
+                        <button class="counter-btn decrement bg-red-500 px-3 py-1 text-white">-</button>
+                        <input type="text" id="counter-value" class="w-[50px] border-[1px] border-cyan-400 pl-1">
+                        <button class="counter-btn increment bg-blue-500 px-3 py-1 text-white">+</button>
+                    </div>
+                </div>
+                <div class="check-title grid grid-cols-12 my-2">
+                    <p class="text-right col-span-2">Số dòng thông báo</p>
+                    <div class="col-span-2 ml-3 flex">
+                        <button class="counter-btn decrement bg-red-500 px-3 py-1 text-white">-</button>
+                        <input type="text" id="counter-value" class="w-[50px] border-[1px] border-cyan-400 pl-1">
+                        <button class="counter-btn increment bg-blue-500 px-3 py-1 text-white">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-text bg-white pb-5">
+            <p class="text-2xl font-normal pl-3">Video player</p>
+            <hr>
+            <div class="check-title grid grid-cols-12 my-2">
+                <p class="text-right col-span-2">Số video mới nhất</p>
+                <div class="col-span-2 ml-3 flex">
+                    <button class="counter-btn decrement bg-red-500 px-3 py-1 text-white">-</button>
+                    <input type="text" id="counter-value" class="w-[50px] border-[1px] border-cyan-400 pl-1">
+                    <button class="counter-btn increment bg-blue-500 px-3 py-1 text-white">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="plus-text bg-white pb-5">
+            <p class="text-2xl font-normal pl-3">Nâng cao</p>
+            <hr>
+            <div class="check-link flex items-center grid grid-cols-12 mt-3">
+                <p class="col-span-2 text-right">Kiểm duyệt tin bài</p>
+                <div class="flex-col items-center col-span-2">
+                    <div class="tab-new flex">
+                        <input type="radio" name="fav_language" id="tabNew">
+                        <label for="tabNew">Duyệt trước khi xuất bản</label>
+                    </div>
+                    <div class="tab-present flex">
+                        <input type="radio" name="fav_language" id="tabPresent">
+                        <label for="tabPresent">Không kiểm duyệt</label>
+                    </div>
+                </div>
+            </div>
+            <button class="mt-3 ml-[350px] bg-blue-500 px-2 py-1 text-white">Lưu lại</button>
+        </div>
+    </div>
+    <script src="honglinh.js"></script>
+</body>
+</html>
